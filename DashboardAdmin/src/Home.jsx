@@ -1,20 +1,19 @@
 import React from "react";
 import { BsFillArchiveFill, BsFillGrid3X3GapFill, BsPeopleFill, BsFillBellFill} from "react-icons/bs";
 import { BarChart, Bar, LineChart, Line, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip,
-    Legend, ResponsiveContainer,
-} from "recharts";
+    Legend, ResponsiveContainer} from "recharts";
 
 function Home() {
     const data = [
         {
             name: "PSPT",
-            mc: 81,
-            mp: 90,
+            mc: 77,
+            mp: 75,
             amt: 100,
         },
         {
             name: "HTML",
-            mc: 73,
+            mc: 82,
             mp: 85,
             amt: 100,
         },
@@ -32,14 +31,14 @@ function Home() {
         },
         {
             name: "LOGIC",
-            mc: 57,
-            mp: 100,
+            mc: 54,
+            mp: 95,
             amt: 100,
         },
         {
             name: "C#",
-            mc: 23,
-            mp: 38,
+            mc: 58,
+            mp: 100,
             amt: 100,
         },
         {
