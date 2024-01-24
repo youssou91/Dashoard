@@ -1,5 +1,5 @@
 import React from "react";
-import { BsFillArchiveFill, BsFillGrid3X3GapFill, BsPeopleFill, BsFillBellFill} from "react-icons/bs";
+import { BsFillArchiveFill, BsFillGrid3X3GapFill, BsPeopleFill, BsFillBellFill, BsGrid1X2Fill} from "react-icons/bs";
 import { BarChart, Bar, LineChart, Line, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip,
     Legend, ResponsiveContainer} from "recharts";
 
@@ -52,7 +52,7 @@ function Home() {
     return (
         <main className="main-container">
             <div className="main-title">
-                <h3>DSHBOARD</h3>
+                <h1><BsGrid1X2Fill className='icon-entete' /> DSHBOARD</h1>
             </div>
             <div className="main-cards">
                 <div className="card">

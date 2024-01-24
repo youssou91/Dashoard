@@ -1,10 +1,11 @@
 import React from 'react'
+import { BsFillArchiveFill } from 'react-icons/bs'
 
 const Produits = () => {
   return (
     <main className="main-container">
       <div className="main-title">
-        <h3>PRODUITS</h3>
+        <h1><BsFillArchiveFill className='icon-entete' /> PRODUITS</h1>
       </div>
     </main>
   )

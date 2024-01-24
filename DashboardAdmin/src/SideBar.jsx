@@ -3,9 +3,10 @@ import {
     BsCart3, BsGrid1X2Fill, BsFillArchiveFill, BsFillGrid3X3GapFill, BsPeopleFill,
     BsListCheck, BsMenuButtonWideFill, BsFillGearFill
 } from 'react-icons/bs'
-import { Link } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 
 function SideBar({ openSidebarToggle, OpenSidebar }) {
+
     return (
         <aside id="sidebar" className={openSidebarToggle ? "sidebar-responsive" : ""}>
             <h2>Sidebar</h2>
@@ -49,10 +50,12 @@ function SideBar({ openSidebarToggle, OpenSidebar }) {
                 <li className='sidebar-item'>
                     <a href="/parametres">
                         <BsFillGearFill className='icon' /> Parametres
+                        <Outlet />
                     </a>
                 </li>
             </ul>
         </aside>
+        
     )
 }
 

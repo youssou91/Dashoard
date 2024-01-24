@@ -11,6 +11,12 @@ body{
   line-height: 1px;
   font-size: 20px;
 }
+.icon-entete{
+  vertical-align: middle;
+  line-height: 1px;
+  font-size: 27px;
+  margin-top: -10px;
+}
 .icon-header{
   vertical-align: middle;
   line-height: 1px;
@@ -112,6 +118,7 @@ body{
 .main-title{
   display: flex;
   justify-content: space-between;
+  margin-top: -25px;
 }
 .main-cards{
   display: grid;
