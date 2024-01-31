@@ -84,7 +84,6 @@ function Home() {
                     <h1>10</h1>
                 </div>
             </div>
-
             <div className="charts">
                 <ResponsiveContainer width="100%" height="100%">
                     <BarChart  width={800} height={300} data={data} 

@@ -7,6 +7,9 @@ const Categories = () => {
     <main className="main-container">
       <div className="main-title">
         <h1><BsFillGrid3X3GapFill className='icon-entete' /> CATEGORIES</h1>
+        <button type='submit' className='bouton_Cat' >
+          Nouvelle Categorie
+        </button>
       </div>
     </main>
   )
