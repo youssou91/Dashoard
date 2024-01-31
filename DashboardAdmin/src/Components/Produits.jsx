@@ -1,16 +1,24 @@
 import { useState } from 'react';
 import { BsFillArchiveFill } from 'react-icons/bs'
 import Modal from 'react-modal';
+// import DataTable from 'react-datatables';
 
 
 const Produits = () => {
-  // Modal.setAppElement('#root'); // Assure que le modal est accessible pour les technologies d'assistance
+  const columns = [
+    { name: 'Name', selector: 'name', sortable: true },
+    { name: 'Email', selector: 'email', sortable: true },
+    // Add other columns as needed
+  ];
+  const data = [
+    { id: 1, name: 'John Doe', email: 'john@example.com' },
+    { id: 2, name: 'Jane Doe', email: 'jane@example.com' },
+    // Add other data rows as needed
+  ];
   const [modalIsOpen, setModalIsOpen] = useState(false);
-
   const openModal = () => {
     setModalIsOpen(true);
   };
-
   const closeModal = () => {
     setModalIsOpen(false);
   };
@@ -23,6 +31,7 @@ const Produits = () => {
         </button>
       </div>
       <div>
+        
         <Modal isOpen={modalIsOpen} onRequestClose={closeModal} contentLabel="Example Modal">
           <button onClick={closeModal}>Fermer </button>
           <div className="myModal" >
@@ -67,36 +76,36 @@ const Produits = () => {
                       <label htmlFor="inputTelephone" className='form-label'>
                         <strong>Telephone :</strong>
                       </label>
-                      <input type="text" id='inputTelephone' placeholder="Entrer le Numero de telephone" className="form-control"/>
+                      <input type="text" id='inputTelephone' placeholder="Entrer le Numero de tel..." className="form-control"/>
                     </div>
                     <div className="items">
                       <label htmlFor="inputCodePostal" className='form-label'>
                         <strong>Code postal :</strong>
                       </label>
-                      <input type="text" id='inputCodePostal' placeholder="Entrer le code postal" className="form-control"/>
+                      <input type="text" id='inputCodePostal'  placeholder="Entrer le Code postal" className="form-control"/>
                     </div>
                     <div className="items">
                       <label htmlFor="inputCategorie" className='form-label'>
                         <strong>Service :</strong>
                       </label>
-                      <select id="inputCategorie" className='form-select'>
+                      {/* <input type="text" id='inputName' placeholder="Entrer le Nom" className="form-control"/> */}
+                      <select id="inputCategorie" className="form-select">
+                        <option value="">Choisir une categorie .</option>
                         <option value="">Choisir une categorie</option>
                         <option value="">Choisir une categorie</option>
                         <option value="">Choisir une categorie</option>
-                        <option value="">Choisir une categorie</option>
-                        
                       </select>
                     </div>
                     <div className="items">
-                      <label htmlFor="inputImageFile" className='form-label'>
-                        <strong> Selectioner une image :</strong>
+                      <label htmlFor="inputEmail" className='form-label'>
+                        <strong>Selectioner une image :</strong>
                       </label>
-                      <input type="file" name="image" id='inputImageFile' className="form-control  image"/>
+                      <input type="file" name="image" id='inputImageFile' className="form-control"/>
                     </div>
                   </div>
                 </div>
                 <div className='col-12'>
-                  <button type='submit' className="btn btn-primary w-100"> Ajouter Employe </button>
+                  <button type='submit' className="bouton_Prod"> Ajouter Employe </button>
                 </div>
               </form>
             </div>
