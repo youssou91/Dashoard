@@ -88,7 +88,6 @@ const Produits = () => {
                       <label htmlFor="inputCategorie" className='form-label'>
                         <strong>Service :</strong>
                       </label>
-                      {/* <input type="text" id='inputName' placeholder="Entrer le Nom" className="form-control"/> */}
                       <select id="inputCategorie" className="form-select">
                         <option value="">Choisir une categorie .</option>
                         <option value="">Choisir une categorie</option>
